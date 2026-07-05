@@ -4,7 +4,7 @@ A comparative study evaluating how different machine learning model classes resp
 
 ## Key Findings
 
-- **Peak clean-data accuracy is misleading for model selection.** The unconstrained decision tree achieved 99.6% accuracy on clean data but collapsed to 60.4% under maximum noise — a 39-point degradation.
+- **Peak clean-data accuracy is misleading for model selection.** The unconstrained decision tree achieved 99.6% accuracy on clean data but collapsed to 60.4% under maximum noise—a 39-point degradation.
 - The regularized MLP (dropout=0.3) held a narrow advantage at moderate noise levels most relevant to real astronomical observations.
 - Logistic regression edged ahead under extreme perturbation, suggesting simpler linear boundaries are more resilient to heavy noise.
 - A dropout ablation confirmed that lighter regularization (0.1–0.3) outperforms aggressive dropout (0.5) on small datasets.
