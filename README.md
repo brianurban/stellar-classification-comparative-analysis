@@ -66,8 +66,9 @@ A comparative study evaluating how different machine learning model classes resp
 
 240 samples with 6 features (4 numeric, 2 categorical) and 6 balanced target classes (Brown Dwarf, Red Dwarf, White Dwarf, Main Sequence, Supergiant, Hypergiant).
 
-**Citation:**  
-Deepu (2020). *Star dataset to predict star types* [Data set]. Kaggle. https://www.kaggle.com/datasets/deepu1109/star-dataset
+**Citation:**
+
+Kaggle. *Star dataset to predict star types*, 2020. https://www.kaggle.com/datasets/deepu1109/star-dataset.
 
 ---
 
