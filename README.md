@@ -22,7 +22,7 @@ A comparative study evaluating how different machine learning model classes resp
 
 ![Accuracy vs Noise Level](figures/noise_level.png)
 
-*Figure 1: Classification accuracy across six Gaussian noise levels (0.0–0.5). Error bars represent 5-fold CV standard deviation.*
+*Figure 1: Classification accuracy across six Gaussian noise levels (0.0–1.0). Error bars represent 5-fold CV standard deviation.*
 
 <br>
 
@@ -34,7 +34,7 @@ A comparative study evaluating how different machine learning model classes resp
 
 ![Confusion Matrix](figures/confusion_matrix.png)
 
-*Figure 2: Confusion matrix at moderate noise (σ=0.25), highlighting systematic misclassification between spectral subclasses.*
+*Figure 3: Confusion matrix at moderate noise (σ=0.25), highlighting systematic misclassification between spectral subclasses.*
 
 ---
 
