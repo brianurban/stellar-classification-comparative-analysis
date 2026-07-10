@@ -2,6 +2,7 @@
 
 A comparative study evaluating how different machine learning model classes respond to measurement noise when classifying stars into six astrophysical categories. The project uses a multilayer perceptron (MLP) implemented in PyTorch alongside logistic regression, two decision tree variants, and two ensemble methods (Random Forest and Gradient Boosting), evaluated across six Gaussian noise levels using 5-fold stratified cross-validation.
 
+---
 
 ## Key Findings
 
@@ -15,6 +16,7 @@ A comparative study evaluating how different machine learning model classes resp
 
 - No pairwise differences reached statistical significance (p ≥ 0.0625), reflecting limited power with 5-fold cross-validation.
 
+---
 
 ## Visual Results
 
@@ -30,20 +32,22 @@ A comparative study evaluating how different machine learning model classes resp
 
 *Figure 2: Confusion matrix at moderate noise (σ=0.25), highlighting systematic misclassification between spectral subclasses.*
 
+---
 
 ## Results at a Glance
 
 | Model | Clean (σ=0.0) | σ=0.10 | σ=0.25 | σ=0.50 | σ=0.75 | σ=1.00 | Degradation |
 |-------|--------------|--------|--------|--------|--------|--------|-------------|
-| Random Forest | **100.0%** ± 0.0 | **97.9%** ± 2.3 | **91.7%** ± 5.1 | 81.7% ± 5.3 | 71.3% ± 4.8 | 66.7% ± 5.4 | 33.3 pp |
-| MLP (PyTorch) | 99.6% ± 0.8 | 97.5% ± 2.4 | **91.7%** ± 4.4 | 81.7% ± 4.0 | 78.3% ± 5.7 | 72.1% ± 4.9 | 27.5 pp |
-| Logistic Reg. | 99.2% ± 1.0 | 96.7% ± 3.1 | 90.8% ± 5.2 | **84.2%** ± 5.0 | **78.7%** ± 6.1 | **75.4%** ± 5.5 | 23.8 pp |
+| Random Forest | **100.0% ± 0.0** | **97.9% ± 2.3** | **91.7% ± 5.1** | 81.7% ± 5.3 | 71.3% ± 4.8 | 66.7% ± 5.4 | 33.3 pp |
+| MLP (PyTorch) | 99.6% ± 0.8 | 97.5% ± 2.4 | **91.7% ± 4.4** | 81.7% ± 4.0 | 78.3% ± 5.7 | 72.1% ± 4.9 | 27.5 pp |
+| Logistic Reg. | 99.2% ± 1.0 | 96.7% ± 3.1 | 90.8% ± 5.2 | **84.2% ± 5.0** | **78.7% ± 6.1** | **75.4% ± 5.5** | 23.8 pp |
 | DT (unconstrained) | 99.6% ± 0.8 | 95.8% ± 2.3 | 87.9% ± 4.8 | 74.6% ± 6.1 | 68.3% ± 4.2 | 60.4% ± 3.7 | 39.2 pp |
 | DT (max_depth=4) | 89.6% ± 7.7 | 92.9% ± 6.9 | 88.3% ± 3.6 | 80.0% ± 5.4 | 68.8% ± 5.4 | 58.3% ± 3.5 | 31.3 pp |
 | Gradient Boosting | 99.2% ± 1.0 | 95.8% ± 2.3 | 89.2% ± 4.0 | 80.0% ± 5.0 | 71.3% ± 5.7 | 68.7% ± 7.6 | 30.5 pp |
 
 *Values are mean ± standard deviation across 5-fold stratified cross-validation. Bold indicates the leading model at each noise level.*
 
+---
 
 ## Models Compared
 
@@ -56,15 +60,16 @@ A comparative study evaluating how different machine learning model classes resp
 | Random Forest | scikit-learn |
 | Gradient Boosting | scikit-learn |
 
+---
 
 ## Dataset
 
 240 samples with 6 features (4 numeric, 2 categorical) and 6 balanced target classes (Brown Dwarf, Red Dwarf, White Dwarf, Main Sequence, Supergiant, Hypergiant).
 
-
 **Citation:**  
 Deepu (2020). *Star dataset to predict star types* [Data set]. Kaggle. https://www.kaggle.com/datasets/deepu1109/star-dataset
 
+---
 
 ## Methodology
 
@@ -80,6 +85,7 @@ Deepu (2020). *Star dataset to predict star types* [Data set]. Kaggle. https://w
 
 - **Diagnostics:** Representative 70-15-15 split for training curves, classification report, and confusion matrix
 
+---
 
 ## Tech Stack
 
@@ -92,6 +98,7 @@ Deepu (2020). *Star dataset to predict star types* [Data set]. Kaggle. https://w
 ![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)
 ![SciPy](https://custom-icon-badges.demolab.com/badge/SciPy-54A6FF?logo=scipy&logoColor=fff)
 
+---
 
 ## Conclusion
 
@@ -101,6 +108,24 @@ Logistic regression emerges as the most robust model, maintaining 75.4% accuracy
 
 For astronomers selecting classification pipelines: prioritize noise robustness over peak performance, and validate with synthetic perturbations before trusting predictions on observational data.
 
+---
+
+### Reproducibility
+
+- **Python version:** 3.13 (tested locally)
+- **Platform:** Windows 11
+- **Random seeds:** `random_state=42` across all scikit-learn operations; PyTorch seeding via `torch.manual_seed(42)`
+- **Cross-validation:** 5-fold stratified (minimum p-value = 0.0625 for Wilcoxon tests)
+- **Environment:** Conda environment (`environment.yml` available upon request)
+- **Dataset:** 240 samples, perfectly balanced (40 per class)
+
+---
+
+## License
+
+MIT License. See [`LICENSE`](LICENSE) file for details.
+
+---
 
 ## Getting Started
 
