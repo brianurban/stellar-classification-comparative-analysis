@@ -118,10 +118,17 @@ For astronomers selecting classification pipelines: prioritize noise robustness 
 ### Reproducibility
 
 - **Python version:** 3.13 (tested locally)
+
 - **Platform:** Windows 11
+
+- **Package manager:** pip (no Conda used)
+
 - **Random seeds:** `random_state=42` across all scikit-learn operations; PyTorch seeding via `torch.manual_seed(42)`
+
 - **Cross-validation:** 5-fold stratified (minimum p-value = 0.0625 for Wilcoxon tests)
-- **Environment:** Conda environment (`environment.yml` available upon request)
+
+- **Dependencies:** See `requirements.txt` for exact package versions
+
 - **Dataset:** 240 samples, perfectly balanced (40 per class)
 
 ---
