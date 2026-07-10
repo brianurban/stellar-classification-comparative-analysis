@@ -24,9 +24,13 @@ A comparative study evaluating how different machine learning model classes resp
 
 *Figure 1: Classification accuracy across six Gaussian noise levels (0.0–0.5). Error bars represent 5-fold CV standard deviation.*
 
+<br>
+
 ![Dropout Ablation](figures/dropout_rate.png)
 
 *Figure 2: MLP accuracy versus dropout rate at noise level σ=0.25. Counterintuitively, dropout=0.5 outperformed lighter regularization (93.3% vs 91.7%).*
+
+<br>
 
 ![Confusion Matrix](figures/confusion_matrix.png)
 
