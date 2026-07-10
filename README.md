@@ -43,6 +43,7 @@ A comparative study evaluating how different machine learning model classes resp
 ![Matplotlib](https://custom-icon-badges.demolab.com/badge/Matplotlib-71D291?logo=matplotlib&logoColor=fff)
 ![Seaborn](https://img.shields.io/badge/Seaborn-4EAEAA?logo=python&logoColor=fff)
 ![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)
+![SciPy](https://custom-icon-badges.demolab.com/badge/SciPy-54A6FF?logo=scipy&logoColor=fff)
 
 ## Getting Started
 
