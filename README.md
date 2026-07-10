@@ -48,10 +48,10 @@ A comparative study evaluating how different machine learning model classes resp
 
 ```bash
 # Clone the repository
-git clone https://github.com/brianurban/stellar-classification-noise-robustness.git
+git clone https://github.com/brianurban/stellar-classification-comparative-analysis.git
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the notebook
-jupyter notebook notebooks/stellar_classification_comparative_analysis.ipynb
+jupyter notebook stellar_classification_comparative_analysis.ipynb
