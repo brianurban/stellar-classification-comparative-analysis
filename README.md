@@ -20,19 +20,19 @@ A comparative study evaluating how different machine learning model classes resp
 
 ## Visual Results
 
-![Accuracy vs Noise Level](figures/noise_level.png)
+![Accuracy vs Noise Level](figures/noise-level.png)
 
 *Figure 1: Classification accuracy across six Gaussian noise levels (0.0–1.0). Error bars represent 5-fold CV standard deviation.*
 
 <br>
 
-![Dropout Ablation](figures/dropout_rate.png)
+![Dropout Ablation](figures/dropout-rate.png)
 
 *Figure 2: MLP accuracy versus dropout rate at noise level σ=0.25. Counterintuitively, dropout=0.5 outperformed lighter regularization (93.3% vs 91.7%).*
 
 <br>
 
-![Confusion Matrix](figures/confusion_matrix.png)
+![Confusion Matrix](figures/confusion-matrix.png)
 
 *Figure 3: Confusion matrix at moderate noise (σ=0.25), highlighting systematic misclassification between spectral subclasses.*
 
@@ -149,4 +149,4 @@ git clone https://github.com/brianurban/stellar-classification-comparative-analy
 pip install -r requirements.txt
 
 # Run the notebook
-jupyter notebook stellar_classification_comparative_analysis.ipynb
+jupyter notebook stellar-classification-comparative-analysis.ipynb
