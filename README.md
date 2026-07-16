@@ -55,14 +55,14 @@ A comparative study evaluating how different machine learning model classes resp
 
 ## Models Compared
 
-| Model | Library |
-|---|---|
-| Multilayer Perceptron (64→32→6, ReLU, BatchNorm, Dropout=0.3) | PyTorch |
-| Logistic Regression | scikit-learn |
-| Decision Tree (unconstrained) | scikit-learn |
-| Decision Tree (max_depth=4) | scikit-learn |
-| Random Forest | scikit-learn |
-| Gradient Boosting | scikit-learn |
+| Model | Type | Library |
+|---|---|---|
+| Multilayer Perceptron (64 → 32 → 6, ReLU, BatchNorm, Dropout=0.3) | Deep Learning | PyTorch |
+| Logistic Regression | Classical | scikit-learn |
+| Decision Tree (unconstrained) | Classical | scikit-learn |
+| Decision Tree (max_depth=4) | Classical | scikit-learn |
+| Random Forest | Ensemble | scikit-learn |
+| Gradient Boosting | Ensemble | scikit-learn |
 
 ---
 
