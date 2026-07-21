@@ -30,7 +30,11 @@
 # ============================================================
 import pandas as pd
 import numpy as np
+
+# import os
 import random
+
+# from pathlib import Path
 from scipy.stats import wilcoxon
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.model_selection import StratifiedKFold, train_test_split
@@ -429,7 +433,12 @@ axes[1].set_title("Model F1-Score vs. Measurement Noise")
 axes[1].legend(fontsize=9)
 axes[1].grid(True, alpha=0.3)
 
+# FIGURES_DIR = Path.home() / "Desktop" / "star-figures"
+# os.makedirs(FIGURES_DIR, exist_ok=True)
+
 plt.tight_layout()
+# plt.savefig(str(FIGURES_DIR / "01-noise-level.png"), dpi=300, bbox_inches='tight')
+# print(f"✅ Saved to {FIGURES_DIR}")
 plt.show()
 
 # %%
@@ -663,7 +672,12 @@ ax.set_xticks(dropout_rates)
 ax.grid(True, alpha=0.3)
 ax.legend()
 
+# FIGURES_DIR = Path.home() / "Desktop" / "star-figures"
+# os.makedirs(FIGURES_DIR, exist_ok=True)
+
 plt.tight_layout()
+# plt.savefig(str(FIGURES_DIR / "02-dropout-rate.png"), dpi=300, bbox_inches='tight')
+# print(f"✅ Saved to {FIGURES_DIR}")
 plt.show()
 
 # %% [markdown]
@@ -787,7 +801,12 @@ axes[1].set_ylabel("Accuracy")
 axes[1].set_title("Validation Accuracy Over Epochs")
 axes[1].grid(True, alpha=0.3)
 
+# FIGURES_DIR = Path.home() / "Desktop" / "star-figures"
+# os.makedirs(FIGURES_DIR, exist_ok=True)
+
 plt.tight_layout()
+# plt.savefig(str(FIGURES_DIR / "03-training-curves.png"), dpi=300, bbox_inches='tight')
+# print(f"✅ Saved to {FIGURES_DIR}")
 plt.show()
 
 # Evaluate on test set
@@ -829,7 +848,13 @@ sns.heatmap(
 plt.title("Confusion Matrix on Test Set (Representative Run, No Noise)")
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
+
+# FIGURES_DIR = Path.home() / "Desktop" / "star-figures"
+# os.makedirs(FIGURES_DIR, exist_ok=True)
+
 plt.tight_layout()
+# plt.savefig(str(FIGURES_DIR / "04-confusion-matrix.png"), dpi=300, bbox_inches='tight')
+# print(f"✅ Saved to {FIGURES_DIR}")
 plt.show()
 
 print("\n" + "=" * 75)
