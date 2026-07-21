@@ -20,21 +20,30 @@ A comparative study evaluating how different machine learning model classes resp
 
 ## Visual Results
 
-![Accuracy vs Noise Level](figures/noise-level.png)
+![Accuracy vs Noise Level](figures/01-noise-level.png)
 
-*Figure 1: Classification accuracy across six Gaussian noise levels (0.0–1.0). Error bars represent 5-fold CV standard deviation.*
-
-<br>
-
-![Dropout Ablation](figures/dropout-rate.png)
-
-*Figure 2: MLP accuracy versus dropout rate at noise level σ=0.25. Counterintuitively, dropout=0.5 outperformed lighter regularization (93.3% vs 91.7%).*
+*Figure 1: Cross-validated accuracy and macro-F1 score versus measurement noise level for all six models. Shaded
+regions represent ±1 standard deviation across 5 folds.*
 
 <br>
 
-![Confusion Matrix](figures/confusion-matrix.png)
+![Dropout Ablation](figures/02-dropout-rate.png)
 
-*Figure 3: Confusion matrix at moderate noise (σ=0.25), highlighting systematic misclassification between spectral subclasses.*
+*Figure 2: MLP accuracy versus dropout rate at noise level 0.25. Error bars represent ±1 standard deviation across
+5 folds.*
+
+<br>
+
+![Training Curves](figures/03-training-curves.png)
+
+*Figure 3: Training loss and validation accuracy over 50 epochs. The training loss gradually decreases while validation
+accuracy converges, indicating effective learning without overfitting*
+
+<br>
+
+![Confusion Matrix](figures/04-confusion-matrix.png)
+
+*Figure 4: Confusion matrix on the test set (representative run, no noise). Diagonal dominance reflects strong per-class accuracy, with slight confusion between Main Sequence stars and Supergiants.*
 
 ---
 
