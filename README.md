@@ -81,7 +81,7 @@ accuracy converges, indicating effective learning without overfitting*
 
 **Citation:**
 
-[Kaggle. *Star dataset to predict star types*, 2020.](https://www.kaggle.com/datasets/deepu1109/star-dataset)
+Kaggle. *Star dataset to predict star types*, 2020. https://www.kaggle.com/datasets/deepu1109/star-dataset.
 
 ---
 
