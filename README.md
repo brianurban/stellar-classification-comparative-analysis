@@ -154,8 +154,5 @@ MIT License. See [`LICENSE`](LICENSE) file for details.
 # Clone the repository
 git clone https://github.com/brianurban/stellar-classification-comparative-analysis.git
 
-# Install dependencies
-pip install -r requirements.txt
-
 # Run the notebook
 jupyter notebook stellar-classification-comparative-analysis.ipynb
